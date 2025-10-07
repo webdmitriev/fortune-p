@@ -23,6 +23,10 @@
 1. Клонируйте репозиторий:
 2. Чтобы использовать свои данные в таблице, необходимо заменить путь ссылки к firebase на свою в файле app.js, однако вместе с этим необходимо соблюдать файловую структуру json (пример можно найти по ссылке в файле)
 
+```bash
+const url = "https://webdmitriev.firebaseio.com/fortune-p.json";
+```
+
 
 ```bash
 git clone https://github.com/webdmitriev/fortune-p
