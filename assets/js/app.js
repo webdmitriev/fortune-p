@@ -1,7 +1,8 @@
 document.addEventListener("DOMContentLoaded", () => {
 
+  // ratings
+  initRatingStars()
   function initRatingStars() {
-
     if (window.innerWidth <= 768) return;
 
     document.querySelectorAll('.rating-stars').forEach((el, index) => {
@@ -40,9 +41,28 @@ document.addEventListener("DOMContentLoaded", () => {
       el.innerHTML = html + ` <p>${rating}</p>`;
     });
   }
-
-  document.addEventListener('DOMContentLoaded', initRatingStars);
   window.addEventListener('resize', initRatingStars);
+
+  // table filter
+  if (document.querySelector('.btn-dots')) {
+    document.querySelector('.btn-dots').addEventListener("click", function (e) {
+      const parent = e.currentTarget.parentNode;
+      parent.querySelector(".table-filter-items").classList.toggle("active")
+    })
+  }
+
+  const filterItems = document.querySelectorAll('.table-container .table-filter-items .table-filter-item');
+  if (filterItems.length > 0) {
+    filterItems.forEach((item) => {
+      item.addEventListener('click', (e) => {
+        filterItems.forEach(el => el.classList.remove('active'));
+        item.classList.add('active');
+
+        const parent = e.currentTarget.parentNode;
+        parent.classList.toggle("active")
+      });
+    });
+  }
 
 
 });
