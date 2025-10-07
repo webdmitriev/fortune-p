@@ -1,6 +1,10 @@
 @media (hover: hover) and (pointer: fine) {
-  .btn:hover {
+  .btn.btn-green:hover {
     color: #262f56;
     background-color: #f6f6f6;
+  }
+
+  .table-container .table-body .table-line:hover {
+    background-color: rgba(0, 0, 0, 0.1);
   }
 }
