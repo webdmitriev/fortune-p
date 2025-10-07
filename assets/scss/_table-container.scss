@@ -148,6 +148,11 @@ body {
         border-bottom: 1px solid #d9eafa;
       }
     }
+    .table-not-found {
+      display: block;
+      width: 100%;
+      min-height: 280px;
+    }
   }
   .table-footer {
     display: flex;

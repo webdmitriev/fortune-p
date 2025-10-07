@@ -605,6 +605,11 @@ body {
 .table-container .table-body .table-line:not(:last-child) {
   border-bottom: 1px solid #d9eafa;
 }
+.table-container .table-body .table-not-found {
+  display: block;
+  width: 100%;
+  min-height: 280px;
+}
 .table-container .table-footer {
   display: flex;
   flex-wrap: wrap;
