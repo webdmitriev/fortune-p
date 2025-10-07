@@ -15,14 +15,20 @@
   color: $text;
   background-color: $gray;
   border-radius: 6px;
-  border: 1px solid $gray;
   transition: all 0.4s ease;
   cursor: pointer;
   &.btn-green {
     color: $white;
     background-color: $green;
-    border-color: $green;
   }
+}
+
+.btn-dots {
+  display: block;
+  width: 24px;
+  height: 24px;
+  background: url("../img/icons/icon-dots.svg") center / contain no-repeat;
+  cursor: pointer;
 }
 
 .badge {
@@ -55,8 +61,8 @@
 
 .verified {
   display: block;
-  width: 12px;
-  height: 12px;
+  width: 16px;
+  height: 16px;
   background: url("../img/icons/verified.svg") center / contain no-repeat;
 }
 

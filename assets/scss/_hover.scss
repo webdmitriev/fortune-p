@@ -1,9 +1,6 @@
 @media (hover: hover) and (pointer: fine) {
-  .btn:not(.btn-green):hover {
-    background-color: #f6f6f6;
-  }
   .btn:hover {
     color: #262f56;
-    background-color: transparent;
+    background-color: #f6f6f6;
   }
 }
