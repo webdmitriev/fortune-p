@@ -1,0 +1,183 @@
+@use "data" as *;
+
+.btn {
+  display: block;
+  width: 100%;
+  max-width: max-content;
+  padding: 14px 24px;
+  font-family: $ff;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1;
+  letter-spacing: 0.02em;
+  text-align: center;
+  text-transform: uppercase;
+  color: $text;
+  background-color: $gray;
+  border-radius: 6px;
+  border: 1px solid $gray;
+  transition: all 0.4s ease;
+  cursor: pointer;
+  &.btn-green {
+    color: $white;
+    background-color: $green;
+    border-color: $green;
+  }
+}
+
+.badge {
+  display: block;
+  width: 100%;
+  max-width: max-content;
+  padding: 6px 8px;
+  font-family: $ff;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: $text;
+  background-color: $gray;
+  border-radius: 100px;
+  &.badge-purpure {
+    color: $purpure;
+    background-color: rgba($purpure, 0.12);
+  }
+  &.badge-red {
+    color: $red;
+    background-color: rgba($red, 0.12);
+  }
+  &.badge-green {
+    color: $green;
+    background-color: rgba($green, 0.12);
+  }
+}
+
+.verified {
+  display: block;
+  width: 12px;
+  height: 12px;
+  background: url("../img/icons/verified.svg") center / contain no-repeat;
+}
+
+.rating-stars {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 3px;
+  width: 100%;
+  max-width: 124px;
+  svg {
+    width: 16px;
+    height: 16px;
+    fill: #c7c7c7;
+    object-fit: contain;
+    &.full {
+      fill: #f3bb44;
+    }
+  }
+  p {
+    display: block;
+    width: 100%;
+    max-width: max-content;
+    margin-left: 3px;
+    font-family: $ff;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 1.4;
+    color: #262f56;
+  }
+}
+
+.comments {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  width: 100%;
+  max-width: max-content;
+  font-family: $ff;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 1.4;
+  color: #262f56;
+  &:before {
+    content: "";
+    display: block;
+    width: 16px;
+    height: 16px;
+    background: url("../img/icons/comments.svg") center / contain no-repeat;
+  }
+}
+
+.gift {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  width: 100%;
+  max-width: max-content;
+  font-family: $ff;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 1.4;
+  color: #262f56;
+  &:before {
+    content: "";
+    display: block;
+    width: 16px;
+    height: 16px;
+    background: url("../img/icons/gift.svg") center / contain no-repeat;
+  }
+  &:after {
+    content: " ₽";
+    display: inline-block;
+  }
+}
+
+.table-title {
+  display: block;
+  width: 100%;
+  font-family: $ff;
+  font-weight: 500;
+  font-size: 25px;
+  color: $text;
+}
+.table-label {
+  display: block;
+  width: 100%;
+  font-family: $ff;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 1.4;
+  color: $text;
+  &.active {
+    font-weight: 500;
+  }
+}
+
+.table-bottom-link {
+  display: block;
+  width: 100%;
+  max-width: max-content;
+  font-family: $ff;
+  font-weight: 500;
+  font-size: 15px;
+  color: $text;
+  cursor: pointer;
+  &.icon-link:after {
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 12px;
+    margin-left: 4px;
+    background: url("../img/icons/arrow-right-dark.svg") center / contain no-repeat;
+  }
+  &.link-green {
+    text-decoration: underline;
+    color: $green;
+  }
+}

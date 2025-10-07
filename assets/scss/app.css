@@ -1,5 +1,4 @@
-@import "../slick/slick.min.css";
-@import "../slick/slick-theme.min.css";
+@charset "UTF-8";
 html,
 body,
 div,
@@ -187,15 +186,18 @@ ul {
 }
 
 /*
-  Colors
+  * Colors
+*/
+/*
+  * Variables
 */
 body {
   margin-bottom: 0;
-  font-family: "Inter", sans-serif;
+  font-family: "Rubik", sans-serif;
   font-weight: 400;
   font-size: 16px;
-  line-height: 1.4;
-  color: #222222;
+  line-height: 1.2;
+  color: #262f56;
 }
 
 #app {
@@ -218,138 +220,195 @@ body {
   }
 }
 
-.df-fs-fs {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  align-items: flex-start;
+.btn {
+  display: block;
+  width: 100%;
+  max-width: max-content;
+  padding: 14px 24px;
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1;
+  letter-spacing: 0.02em;
+  text-align: center;
+  text-transform: uppercase;
+  color: #262f56;
+  background-color: #f6f6f6;
+  border-radius: 6px;
+  border: 1px solid #f6f6f6;
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
+.btn.btn-green {
+  color: #ffffff;
+  background-color: #00c659;
+  border-color: #00c659;
 }
 
-.df-fs-ce {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  align-items: center;
+.badge {
+  display: block;
+  width: 100%;
+  max-width: max-content;
+  padding: 6px 8px;
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #262f56;
+  background-color: #f6f6f6;
+  border-radius: 100px;
+}
+.badge.badge-purpure {
+  color: #b02bc8;
+  background-color: rgba(176, 43, 200, 0.12);
+}
+.badge.badge-red {
+  color: #c82b32;
+  background-color: rgba(200, 43, 50, 0.12);
+}
+.badge.badge-green {
+  color: #00c659;
+  background-color: rgba(0, 198, 89, 0.12);
 }
 
-.df-fs-fe {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  align-items: flex-end;
+.verified {
+  display: block;
+  width: 12px;
+  height: 12px;
+  background: url("../img/icons/verified.svg") center/contain no-repeat;
 }
 
-.df-fs-st {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  align-items: stretch;
-}
-
-.df-ce-fs {
+.rating-stars {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
+  gap: 3px;
+  width: 100%;
+  max-width: 124px;
+}
+.rating-stars svg {
+  width: 16px;
+  height: 16px;
+  fill: #c7c7c7;
+  object-fit: contain;
+}
+.rating-stars svg.full {
+  fill: #f3bb44;
+}
+.rating-stars p {
+  display: block;
+  width: 100%;
+  max-width: max-content;
+  margin-left: 3px;
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 1.4;
+  color: #262f56;
 }
 
-.df-ce-ce {
+.comments {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  gap: 4px;
+  width: 100%;
+  max-width: max-content;
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 1.4;
+  color: #262f56;
+}
+.comments:before {
+  content: "";
+  display: block;
+  width: 16px;
+  height: 16px;
+  background: url("../img/icons/comments.svg") center/contain no-repeat;
 }
 
-.df-ce-fe {
+.gift {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: flex-end;
-}
-
-.df-ce-st {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: stretch;
-}
-
-.df-fe-fs {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-end;
-  align-items: flex-start;
-}
-
-.df-fe-ce {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-end;
   align-items: center;
+  gap: 4px;
+  width: 100%;
+  max-width: max-content;
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 1.4;
+  color: #262f56;
+}
+.gift:before {
+  content: "";
+  display: block;
+  width: 16px;
+  height: 16px;
+  background: url("../img/icons/gift.svg") center/contain no-repeat;
+}
+.gift:after {
+  content: " ₽";
+  display: inline-block;
 }
 
-.df-fe-fe {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-end;
-  align-items: flex-end;
+.table-title {
+  display: block;
+  width: 100%;
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  font-size: 25px;
+  color: #262f56;
 }
 
-.df-sp-fs {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: flex-start;
+.table-label {
+  display: block;
+  width: 100%;
+  font-family: "Rubik", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 1.4;
+  color: #262f56;
+}
+.table-label.active {
+  font-weight: 500;
 }
 
-.df-sp-ce {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
+.table-bottom-link {
+  display: block;
+  width: 100%;
+  max-width: max-content;
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  color: #262f56;
+  cursor: pointer;
+}
+.table-bottom-link.icon-link:after {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 12px;
+  margin-left: 4px;
+  background: url("../img/icons/arrow-right-dark.svg") center/contain no-repeat;
+}
+.table-bottom-link.link-green {
+  text-decoration: underline;
+  color: #00c659;
 }
 
-.df-sp-fe {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: flex-end;
-}
-
-.df-sp-st {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: stretch;
-}
-
-.scroll-line-none::-webkit-scrollbar {
-  width: 0px;
-  height: 0px;
-}
-
-.scroll-line-none::-webkit-scrollbar-button {
-  background-color: #666;
-}
-
-.scroll-line-none::-webkit-scrollbar-track {
-  background-color: #999;
-}
-
-.scroll-line-none::-webkit-scrollbar-track-piece {
-  background-color: #ffffff;
-}
-
-.scroll-line-none::-webkit-scrollbar-thumb {
-  height: 0px;
-  background-color: #666;
-  border-radius: 3px;
-}
-
-.scroll-line-none::-webkit-scrollbar-corner {
-  background-color: #999;
-}
-
-.scroll-line-none::-webkit-resizer {
-  background-color: #666;
+@media (hover: hover) and (pointer: fine) {
+  .btn:not(.btn-green):hover {
+    background-color: #f6f6f6;
+  }
+  .btn:hover {
+    color: #262f56;
+    background-color: transparent;
+  }
 }/*# sourceMappingURL=app.css.map */

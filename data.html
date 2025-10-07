@@ -13,12 +13,28 @@
 		<link rel="stylesheet" href="./assets/scss/app.css" />
 
     <style>
+      body {
+        padding-block: 4vh;
+      }
       .elements {
         display: flex;
         flex-wrap: wrap;
         justify-content: flex-start;
-        align-items: flex-start;
+        align-items: center;
         gap: 16px 24px;
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 40px;
+        background-color: rgba(246, 246, 246, 0.5);
+        border-radius: 8px;
+      }
+      .elements h2 {
+        display: block;
+        width: 100%;
+        font-family: "Rubik", sans-serif;
+        font-weight: 600;
+        font-size: 32px;
+        color: #262f56;
       }
     </style>
 	</head>
@@ -26,13 +42,47 @@
     <div id="app">
 
       <div class="elements">
-        <button class="btn">сайт</button>
+        <h2>Кнопки</h2>
+
+        <button class="btn btn-green">сайт</button>
         <a href="#" class="btn">сайт</a>
+
+        <a href="#" class="btn btn-green">сайт</a>
+        <button class="btn">сайт</button>
       </div>
 
       <hr />
 
+      <div class="elements">
+        <h2>Элементы</h2>
+
+        <div class="badge badge-purpure">Эксклюзив</div>
+        <div class="badge badge-red">Нет бонуса</div>
+        <div class="badge badge-green">Без депозита</div>
+
+        <div class="verified"></div>
+
+        <div class="rating-stars" data-rating="4.9"></div>
+
+        <div class="comments">325</div>
+
+        <div class="gift">25K</div>
+      </div>
+
+      <hr />
+
+      <div class="elements">
+        <h2>Тексты</h2>
+
+        <div class="table-title">Table title</div>
+        <div class="table-label">Table label</div>
+        <div class="table-label active">Table label active</div>
+        <div class="table-bottom-link icon-link">Table button link</div>
+        <div class="table-bottom-link link-green">Table button link</div>
+      </div>
+
 		</div>
+
 		<script src="./assets/js/app.js"></script>
 	</body>
 </html>
