@@ -1,0 +1,59 @@
+/*
+  * Colors
+*/
+$white: #ffffff;
+$black: #000000;
+$text: #262f56;
+
+/*
+  * Variables
+*/
+$md: 767;
+$container: 1310px;
+$indent: 10px;
+$ff: "Rubik", sans-serif;
+$fz: 16px;
+$lh: 1.2;
+$color: $text;
+
+body {
+  margin-bottom: 0;
+  font-family: $ff;
+  font-weight: 400;
+  font-size: $fz;
+  line-height: $lh;
+  color: $color;
+}
+
+#app {
+  position: relative;
+  max-width: 1920px;
+  margin-inline: auto;
+  overflow-x: hidden;
+}
+
+.container {
+  display: block;
+  width: 100%;
+  max-width: $container;
+  margin-inline: auto;
+  padding-inline: $indent;
+  @media (max-width: #{$md}px) {
+    max-width: 600px;
+  }
+}
+
+@media (max-width: 1440px) {
+}
+@media (max-width: 1199px) {
+}
+@media (max-width: 991px) {
+}
+@media (max-width: 767px) {
+}
+@media (max-width: 576px) {
+}
+@media (max-width: 460px) {
+}
+@media (max-width: 400px) {
+}
